@@ -158,5 +158,21 @@ a {
     margin-top: 20px;
 }
 
+.monuments-container img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Survol : couleur + zoom */
+  .monuments-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+  
+  /* Clic : couleur (mais sans zoom sauf si tu veux le garder) */
+  .monuments-container img.active {
+    filter: grayscale(0%);
+  }
   
   

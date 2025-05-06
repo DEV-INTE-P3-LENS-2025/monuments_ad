@@ -1,4 +1,16 @@
 function afficherInfos(id) {
+
+// Supprimer la classe 'active' de toutes les images
+const images = document.querySelectorAll(".monuments-container img");
+images.forEach(img => img.classList.remove("active"));
+
+// Trouver l'image du monument cliqué et lui ajouter la classe 'active'
+const clickedImage = document.querySelector(`img[onclick*="${id}"]`);
+if (clickedImage) {
+  clickedImage.classList.add("active");
+}
+
+
   const infos = {
     "tour-eiffel": {
       nom: "Tour Eiffel",
