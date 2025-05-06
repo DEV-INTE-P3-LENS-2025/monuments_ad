@@ -26,6 +26,22 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 0.8em;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+.cliquer{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+
 img,
 picture,
 video,
@@ -66,3 +82,60 @@ a {
 #__next {
     isolation: isolate;
 }
+
+.monuments-container {
+    display: flex;
+  }
+  
+  .monument {
+    flex: 1;   /*Chaque image prend une part égale*/
+    text-align: center;
+  }
+  
+  .monument img {
+    width: 100%;   /*Chaque image prend toute la largeur de son bloc*/
+    aspect-ratio: 1 / 1;   /* Format carré */
+    border: 1px solid black;
+  }
+
+  button {
+    background-color: var(--black);
+    color: var(--white);
+    border: none; 
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 16px;
+    cursor: pointer; /* Curseur pointeur pour indiquer que c'est cliquable */
+  }
+  
+  button:hover {
+    background-color: grey;
+  }
+  
+  .infos-container {
+    height: 300px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: var(--black);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .infos-content {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  /* Quand .visible est appliqué au parent */
+  .infos-container.visible .infos-content {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+
+  
+  
+  
+  

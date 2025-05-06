@@ -14,8 +14,47 @@
 
 <body>
     <header>
-        <h1>Les monuments</h1>
+        <h1>LES MONUMENTS</h1>
     </header>
+
+    <main>
+        <p class="cliquer">Cliquez sur un monument ou sur un bouton pour obtenir une description</p>
+
+        <div class="monuments-container">
+            <section class="monument">
+                <button class="nom-monument" onclick="afficherInfos('tour-eiffel')">Tour Eiffel</button>
+              <img src="./images/tour_eiffel.jpg" alt="Tour Eiffel" onclick="afficherInfos('tour-eiffel')">
+            </section>
+
+            <section class="monument">
+                <button class="nom-monument" onclick="afficherInfos('notre-dame')">Notre Dame</button>
+              <img src="./images/notre_dame.jpg" alt="Notre-Dame" onclick="afficherInfos('notre-dame')"> 
+            </section>
+
+            <section class="monument">
+                <button class="nom-monument" onclick="afficherInfos('arc-de-triomphe')">Arc de Triomphe</button>
+                <img src="./images/arc_de_triomphe.jpg" alt="Arc-de-Triomphe" onclick="afficherInfos('arc-de-triomphe')">
+            </section>
+
+            <section class="monument">
+                <button class="nom-monument" onclick="afficherInfos('mont-saint-michel')">Mont Saint Michel</button>
+                <img src="./images/mont_saint_michel.jpg" alt="Mont-saint-Michel" onclick="afficherInfos('mont-saint-michel')">
+            </section>
+
+            <section class="monument">
+                <button class="nom-monument" onclick="afficherInfos('versailles')">Versailles</button>
+                <img src="./images/versailles.jpg" alt="Versailles" onclick="afficherInfos('versailles')">
+            </section>
+        
+        </div>
+        
+          <!-- Section pour les informations dynamiques -->
+          <section id="infos-monument" class="infos-container">
+
+          </section>
+
+    </main>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 
