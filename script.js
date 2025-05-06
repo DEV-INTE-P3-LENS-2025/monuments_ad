@@ -34,8 +34,8 @@ function afficherInfos(id) {
     container.innerHTML = `
       <div class="infos-content">
         <h2>${monument.nom}</h2>
-        <p>${monument.localisation}</p>
-        <p>${monument.description}</p>
+        <p class="pays">${monument.localisation}</p>
+        <p class="description">${monument.description}</p>
         
         
       </div>

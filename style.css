@@ -114,7 +114,7 @@ a {
   
   .infos-container {
     height: 300px;
-    padding: 20px;
+    padding: 40px;
     margin-top: 30px;
     background-color: var(--black);
     color: var(--white);
@@ -134,8 +134,18 @@ a {
     transform: translateX(0);
   }
   
-
+  .infos-content h2 {
+    font-size: 45px;
+  }
   
+  .pays{
+    font-size: 30px;
+  }
+
+  .description{
+    font-size: 18px;
+    font-weight: 100;
+  }
   
   
   
