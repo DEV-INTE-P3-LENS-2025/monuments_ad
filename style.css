@@ -152,5 +152,11 @@ a {
     font-weight: 100;
   }
   
+.map-container{
+    height: 400px;
+    width: 500px;
+    margin-top: 20px;
+}
+
   
   
