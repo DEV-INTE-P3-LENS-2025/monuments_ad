@@ -122,18 +122,23 @@ a {
     overflow: hidden;
   }
   
-  .infos-content {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
   
-  /* Quand .visible est appliqué au parent */
+  @keyframes slideFadeIn {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
   .infos-container.visible .infos-content {
-    opacity: 1;
-    transform: translateX(0);
+    animation: slideFadeIn 1.2s ease-out forwards;
   }
   
+
   .infos-content h2 {
     font-size: 45px;
   }
