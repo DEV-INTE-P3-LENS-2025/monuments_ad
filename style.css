@@ -88,12 +88,12 @@ a {
   }
   
   .monument {
-    flex: 1;   /*Chaque image prend une part égale*/
+    flex: 1;   /* Chaque image prend une part égale */
     text-align: center;
   }
   
   .monument img {
-    width: 100%;   /*Chaque image prend toute la largeur de son bloc*/
+    width: 100%;   /* Chaque image prend toute la largeur de son bloc */
     aspect-ratio: 1 / 1;   /* Format carré */
     border: 1px solid black;
   }
@@ -125,12 +125,12 @@ a {
   
   @keyframes slideFadeIn {
     0% {
-      transform: translateX(-50px);
-      opacity: 0;
+      transform: translateX(-50px);  /* Déplacement vers la gauche */
+      opacity: 0;                    /* Texte transparent */
     }
     100% {
-      transform: translateX(0);
-      opacity: 1;
+      transform: translateX(0);  /* Position d'origine */
+      opacity: 1;  /* Texte visible */
     }
   }
 
@@ -175,4 +175,11 @@ a {
     filter: grayscale(0%);
   }
   
+  .monuments-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    z-index: 1;
+    position: relative;
+  }
+    
   
