@@ -170,7 +170,6 @@ a {
     transform: scale(1.05);
   }
   
-  /* Clic : couleur (mais sans zoom sauf si tu veux le garder) */
   .monuments-container img.active {
     filter: grayscale(0%);
   }
